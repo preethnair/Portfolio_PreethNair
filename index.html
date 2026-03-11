@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preeth Nair — Data Scientist & ML Engineer</title>
+  <meta name="description" content="Preeth Nair — Data Scientist, ML Engineer, and AI Enthusiast. Turning raw data into intelligent decisions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Preeth Nair — Home">Preeth Nair</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="home" class="hero" aria-label="Hero section">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content fade-in-hero">
+      <p class="hero-eyebrow"><span class="hero-eyebrow-text">Welcome — I'm</span></p>
+      <h1 class="hero-name">Preeth Nair</h1>
+
+      <div class="hero-typewriter" aria-live="polite" aria-label="Role description">
+        <span class="typewriter-prefix">I am a </span>
+        <span class="typewriter-text" id="typewriter-text"></span>
+        <span class="typewriter-cursor" aria-hidden="true">|</span>
+      </div>
+
+      <p class="hero-tagline">Turning raw data into intelligent decisions</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/resume.pdf" class="btn btn-outline" download aria-label="Download Resume PDF">Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about" class="about section-reveal" aria-label="About section">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">Crafting Intelligence<br /><em>from Data</em></h2>
+
+          <p class="about-para">
+            I'm a Data Scientist and ML Engineer with a deep passion for building systems that learn, adapt, and deliver real-world impact. My work sits at the intersection of rigorous statistical thinking and modern deep learning — where numbers become narratives, and models become products.
+          </p>
+
+          <p class="about-para">
+            Currently focused on advancing my expertise in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Generative AI</strong>, with a particular interest in productionizing models that scale. I believe the most powerful insight is one that reaches the people who need it.
+          </p>
+
+          <div class="about-stack">
+            <span class="stack-label">Core Stack</span>
+            <div class="stack-pills">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">TensorFlow</span>
+              <span class="stack-pill">PyTorch</span>
+              <span class="stack-pill">SQL</span>
+              <span class="stack-pill">Tableau</span>
+              <span class="stack-pill">Docker</span>
+            </div>
+          </div>
+
+          <p class="about-goal">
+            <span class="goal-icon" aria-hidden="true">◈</span>
+            Goal: To engineer AI systems that are not just accurate — but interpretable, scalable, and genuinely useful.
+          </p>
+        </div>
+
+        <div class="about-image-wrap">
+          <div class="about-image-ring" aria-hidden="true"></div>
+          <div class="about-image-container">
+            <img
+              src="assets/profile.jpg"
+              alt="Preeth Nair — Data Scientist and ML Engineer"
+              class="about-img"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback')"
+            />
+            <div class="img-fallback-content" aria-hidden="true">
+              <span class="fallback-initials">PN</span>
+            </div>
+          </div>
+          <div class="about-image-deco" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects" class="projects section-reveal" aria-label="Projects section">
+    <div class="container">
+      <div class="section-label">02 / Projects</div>
+      <h2 class="section-heading">Selected Work</h2>
+      <p class="section-sub">A few problems I've turned into solutions</p>
+
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <article class="project-card glass-card" aria-label="Vendor Performance Analytics Pipeline project">
+          <div class="card-top">
+            <div class="card-number" aria-hidden="true">01</div>
+            <a href="#" class="card-github-link" aria-label="View on GitHub" title="View on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Vendor Performance Analytics Pipeline</h3>
+            <p class="card-desc">Automated end-to-end vendor KPI pipeline that ingests, transforms, and visualizes multi-source supply chain data — reducing manual reporting time by <strong>40%</strong> and surfacing actionable insights in real time.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Tableau</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card glass-card" aria-label="Nifty-50 Portfolio Optimization project">
+          <div class="card-top">
+            <div class="card-number" aria-hidden="true">02</div>
+            <a href="#" class="card-github-link" aria-label="View on GitHub" title="View on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Nifty-50 Portfolio Optimization</h3>
+            <p class="card-desc">ML-driven quantitative strategy for Nifty-50 equities applying Modern Portfolio Theory and Monte Carlo simulation to maximize risk-adjusted returns, calibrated against historical market regimes.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">QuantLib</span>
+              <span class="tag">NumPy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card glass-card" aria-label="Netflix Recommendation Engine project">
+          <div class="card-top">
+            <div class="card-number" aria-hidden="true">03</div>
+            <a href="#" class="card-github-link" aria-label="View on GitHub" title="View on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Netflix Recommendation Engine</h3>
+            <p class="card-desc">Collaborative filtering recommendation system trained on Netflix viewing patterns, combining user-based and item-based CF with matrix factorization — achieving <strong>87% prediction accuracy</strong> on holdout sets.</p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section id="skills" class="skills section-reveal" aria-label="Skills section">
+    <div class="container">
+      <div class="section-label">03 / Skills</div>
+      <h2 class="section-heading">Technical Expertise</h2>
+      <p class="section-sub">The tools I use to build, train, and deploy</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon" aria-hidden="true">⟨/⟩</div>
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-badges">
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">R</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon" aria-hidden="true">⬡</div>
+          <h3 class="skill-cat-title">ML / DL</h3>
+          <div class="skill-badges">
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">TensorFlow</span>
+            <span class="badge">Keras</span>
+            <span class="badge">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon" aria-hidden="true">◈</div>
+          <h3 class="skill-cat-title">Tools</h3>
+          <div class="skill-badges">
+            <span class="badge">Tableau</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">Git</span>
+            <span class="badge">Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon" aria-hidden="true">⬢</div>
+          <h3 class="skill-cat-title">Databases</h3>
+          <div class="skill-badges">
+            <span class="badge">MySQL</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MongoDB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ RESUME ═══════════ -->
+  <section id="resume" class="resume section-reveal" aria-label="Resume section">
+    <div class="container">
+      <div class="resume-inner">
+        <div class="section-label">04 / Resume</div>
+        <h2 class="section-heading">Want to know more?</h2>
+        <p class="resume-sub">My full experience, education, and achievements — compiled and ready to review.</p>
+        <a href="assets/resume.pdf" class="btn btn-primary btn-large resume-btn" download aria-label="Download Preeth Nair's Resume PDF">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact" class="contact section-reveal" aria-label="Contact section">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-heading">Let's Connect</h2>
+      <p class="section-sub">Have a project in mind? Let's talk data.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-form-wrap">
+          <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project or idea..." required rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-intro">
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something impactful.</p>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/preethnair" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Preeth Nair on LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+              <span>linkedin.com/in/preethnair</span>
+            </a>
+            <a href="https://github.com/preethnair" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Preeth Nair on GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>github.com/preethnair</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">© 2025 Preeth Nair · Built with passion</p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true">
+    <span class="toast-icon" aria-hidden="true">✓</span>
+    <span class="toast-msg">Message sent! I'll get back to you soon.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
