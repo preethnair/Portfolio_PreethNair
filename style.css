@@ -44,8 +44,9 @@
 
   --sand-border: rgba(219, 206, 165, 0.14);
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body:    'Inter', system-ui, sans-serif;
+  --font-family: 'DM Serif Display', serif;
+  --font-body:    'OCR A Std', monospace;
+
 
   --nav-h:    72px;
   --max-w:    1240px;
