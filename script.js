@@ -428,18 +428,18 @@ function closeMobileNav() {
   if (!wrap) return;
 
   const skills = [
-    { name: 'Python',       level: '◆◆◆◆◇', size: 118, color: 'b-gold',   x: 260, y: 20  },
-    { name: 'SQL',          level: '◆◆◆◆◇', size: 108, color: 'b-gold',   x: 400, y: 110 },
-    { name: 'Numpy',        level: '◆◆◆◇◇', size: 96,  color: 'b-teal',   x: 95,  y: 70  },
-    { name: 'Pandas',       level: '◆◆◆◇◇', size: 100, color: 'b-teal',   x: 20,  y: 190 },
-    { name: 'Scikit-learn', level: '◆◆◆◇◇', size: 104, color: 'b-violet', x: 155, y: 195 },
-    { name: 'SciPy',        level: '◆◆◆◇◇', size: 94,  color: 'b-violet', x: 385, y: 245 },
-    { name: 'PyTorch',      level: '◆◆◇◇◇', size: 84,  color: 'b-violet', x: 500, y: 25  },
-    { name: 'Power BI',     level: '◆◆◇◇◇', size: 82,  color: 'b-sage',   x: 490, y: 355 },
-    { name: 'Azure',        level: '◆◆◇◇◇', size: 80,  color: 'b-sage',   x: 20,  y: 360 },
-    { name: 'SSMS',         level: '◆◆◆◇◇', size: 96,  color: 'b-gold',   x: 145, y: 375 },
-    { name: 'GitHub',       level: '◆◆◆◇◇', size: 98,  color: 'b-teal',   x: 285, y: 390 },
-    { name: 'SQL Server',   level: '◆◆◆◇◇', size: 100, color: 'b-gold',   x: 45,  y: 490 },
+    { name: 'Python',       level: '◆◆◆◆◇', size: 130, color: 'b-gold',   x: 320, y: 20  },
+    { name: 'SQL',          level: '◆◆◆◆◇', size: 118, color: 'b-gold',   x: 520, y: 100 },
+    { name: 'Numpy',        level: '◆◆◆◇◇', size: 106, color: 'b-teal',   x: 120, y: 60  },
+    { name: 'Pandas',       level: '◆◆◆◇◇', size: 110, color: 'b-teal',   x: 30,  y: 210 },
+    { name: 'Scikit-learn', level: '◆◆◆◇◇', size: 114, color: 'b-violet', x: 200, y: 220 },
+    { name: 'SciPy',        level: '◆◆◆◇◇', size: 104, color: 'b-violet', x: 480, y: 260 },
+    { name: 'PyTorch',      level: '◆◆◇◇◇', size: 94,  color: 'b-violet', x: 680, y: 30  },
+    { name: 'Power BI',     level: '◆◆◇◇◇', size: 92,  color: 'b-sage',   x: 720, y: 320 },
+    { name: 'Azure',        level: '◆◆◇◇◇', size: 88,  color: 'b-sage',   x: 30,  y: 400 },
+    { name: 'SSMS',         level: '◆◆◆◇◇', size: 106, color: 'b-gold',   x: 200, y: 400 },
+    { name: 'GitHub',       level: '◆◆◆◇◇', size: 108, color: 'b-teal',   x: 420, y: 390 },
+    { name: 'SQL Server',   level: '◆◆◆◇◇', size: 110, color: 'b-gold',   x: 640, y: 430 },
   ];
 
   const isMobile = window.innerWidth < 768;
