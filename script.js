@@ -108,7 +108,7 @@
   const el = document.getElementById('typewriter-text');
   if (!el) return;
 
-  const titles = ['Data Scientist', 'ML Engineer', 'AI Enthusiast'];
+  const titles = ['Data Analyst', 'ML Engineer', 'AI Enthusiast'];
   let titleIdx  = 0;
   let charIdx   = 0;
   let deleting  = false;
