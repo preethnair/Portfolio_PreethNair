@@ -451,14 +451,26 @@ function closeMobileNav() {
     { x: 160, y: 480 }, { x: 290, y: 470 }, { x: 60,  y: 600 },
   ];
 
-  skills.forEach((s, i) => {
-    const pos = isMobile ? mobilePositions[i] : { x: s.x, y: s.y };
+  const bubbleEls = [];
+  skills.forEach(s => {
     const el = document.createElement('div');
     el.className = `bubble ${s.color}`;
-    el.style.cssText = `width:${s.size}px;height:${s.size}px;left:${pos.x}px;top:${pos.y}px;`;
-    const fs = s.size > 100 ? '0.88rem' : s.size > 88 ? '0.8rem' : '0.74rem';
+    el.style.cssText = `width:${s.size}px;height:${s.size}px;left:${s.x}px;top:${s.y}px;`;
+    const fs = s.size > 115 ? '0.88rem' : s.size > 100 ? '0.8rem' : '0.74rem';
     el.innerHTML = `<span class="bname" style="font-size:${fs}">${s.name}</span><span class="blevel">${s.level}</span>`;
     wrap.appendChild(el);
+    bubbleEls.push({ el, s });
+  });
+
+  /* Auto-center the whole group horizontally */
+  const wrapW = wrap.offsetWidth;
+  const maxRight = Math.max(...skills.map(s => s.x + s.size));
+  const minLeft  = Math.min(...skills.map(s => s.x));
+  const groupW   = maxRight - minLeft;
+  const offset   = (wrapW - groupW) / 2 - minLeft;
+
+  bubbleEls.forEach(({ el, s }) => {
+    el.style.left = (s.x + offset) + 'px';
   });
 })();
 
