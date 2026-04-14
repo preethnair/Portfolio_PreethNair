@@ -420,6 +420,47 @@ function closeMobileNav() {
   });
 })();
 
+/* ─────────────────────────────────────
+   10. SKILLS BUBBLE CHART
+   ───────────────────────────────────── */
+(function initBubbles() {
+  const wrap = document.getElementById('bubble-wrap');
+  if (!wrap) return;
+
+  const skills = [
+    { name: 'Python',       level: '◆◆◆◆◇', size: 118, color: 'b-gold',   x: 260, y: 20  },
+    { name: 'SQL',          level: '◆◆◆◆◇', size: 108, color: 'b-gold',   x: 400, y: 110 },
+    { name: 'Numpy',        level: '◆◆◆◇◇', size: 96,  color: 'b-teal',   x: 95,  y: 70  },
+    { name: 'Pandas',       level: '◆◆◆◇◇', size: 100, color: 'b-teal',   x: 20,  y: 190 },
+    { name: 'Scikit-learn', level: '◆◆◆◇◇', size: 104, color: 'b-violet', x: 155, y: 195 },
+    { name: 'SciPy',        level: '◆◆◆◇◇', size: 94,  color: 'b-violet', x: 385, y: 245 },
+    { name: 'PyTorch',      level: '◆◆◇◇◇', size: 84,  color: 'b-violet', x: 500, y: 25  },
+    { name: 'Power BI',     level: '◆◆◇◇◇', size: 82,  color: 'b-sage',   x: 490, y: 355 },
+    { name: 'Azure',        level: '◆◆◇◇◇', size: 80,  color: 'b-sage',   x: 20,  y: 360 },
+    { name: 'SSMS',         level: '◆◆◆◇◇', size: 96,  color: 'b-gold',   x: 145, y: 375 },
+    { name: 'GitHub',       level: '◆◆◆◇◇', size: 98,  color: 'b-teal',   x: 285, y: 390 },
+    { name: 'SQL Server',   level: '◆◆◆◇◇', size: 100, color: 'b-gold',   x: 45,  y: 490 },
+  ];
+
+  const isMobile = window.innerWidth < 768;
+
+  const mobilePositions = [
+    { x: 130, y: 20  }, { x: 260, y: 30  }, { x: 30,  y: 120 },
+    { x: 200, y: 140 }, { x: 80,  y: 240 }, { x: 220, y: 260 },
+    { x: 130, y: 370 }, { x: 260, y: 360 }, { x: 20,  y: 460 },
+    { x: 160, y: 480 }, { x: 290, y: 470 }, { x: 60,  y: 600 },
+  ];
+
+  skills.forEach((s, i) => {
+    const pos = isMobile ? mobilePositions[i] : { x: s.x, y: s.y };
+    const el = document.createElement('div');
+    el.className = `bubble ${s.color}`;
+    el.style.cssText = `width:${s.size}px;height:${s.size}px;left:${pos.x}px;top:${pos.y}px;`;
+    const fs = s.size > 100 ? '0.88rem' : s.size > 88 ? '0.8rem' : '0.74rem';
+    el.innerHTML = `<span class="bname" style="font-size:${fs}">${s.name}</span><span class="blevel">${s.level}</span>`;
+    wrap.appendChild(el);
+  });
+})();
 
 /* ─────────────────────────────────────
    KEYFRAME for shake animation (inline)
